@@ -1,0 +1,163 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+{% comment %} <div class="row">
+
+<div class="col-lg-4 col-md-6 mt-2">
+		<div class="card bg-gradient-dark">
+			<div class="card-body p-3">
+			<div class="row">
+				<div class="col-8">
+				<div class="numbers">
+					<p class="text-white text-sm mb-0 opacity-10">Paquete</p>
+					<h5 class="text-white font-weight-bolder mb-0">
+					En Miami
+					</h5>
+				</div>
+				</div>
+				<div class="col-4 text-end">
+				<div class="icon icon-shape bg-white shadow text-center border-radius-md">
+
+		 			<i class="fas fa-hourglass-half text-dark text-lg opacity-10" aria-hidden="true"></i>
+					 
+				</div>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="col-lg-4 col-md-6 mt-2">
+		<div class="card bg-gradient-dark">
+			<div class="card-body p-3">
+			<div class="row">
+				<div class="col-8">
+				<div class="numbers">
+					<p class="text-white text-sm mb-0 opacity-10">On Hand</p>
+					<h5 class="text-white font-weight-bolder mb-0">
+					99 %
+					</h5>
+				</div>
+				</div>
+				<div class="col-4 text-end">
+				<div class="icon icon-shape bg-white shadow text-center border-radius-md">
+		 			<i class="fas fa-truck-loading text-dark text-lg opacity-10" aria-hidden="true"></i>
+				</div>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+
+	
+
+	<div class="col-lg-4 col-md-6 mt-2">
+		<div class="card bg-gradient-dark">
+			<div class="card-body p-3">
+			<div class="row">
+				<div class="col-8">
+				<div class="numbers">
+					<p class="text-white text-sm mb-0 opacity-7">In Process</p>
+					<h5 class="text-white font-weight-bolder mb-0">
+					99 %
+					</h5>
+				</div>
+				</div>
+				<div class="col-4 text-end">
+				<div class="icon icon-shape bg-white shadow text-center border-radius-md">
+					<i class="fas fa-plane text-dark text-lg opacity-10" aria-hidden="true"></i>
+				</div>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+	
+	
+</div>
+<div class="row mt-2">
+	<div class="col-lg-4 col-md-6 mt-2">
+		<div class="card bg-gradient-dark">
+			<div class="card-body p-3">
+			<div class="row">
+				<div class="col-8">
+				<div class="numbers">
+					<p class="text-white text-sm mb-0 opacity-7">In Transit</p>
+					<h5 class="text-white font-weight-bolder mb-0">
+					99 %
+					</h5>
+				</div>
+				</div>
+				<div class="col-4 text-end">
+				<div class="icon icon-shape bg-white shadow text-center border-radius-md">
+					<i class="fas fa-truck-moving text-dark text-lg opacity-10" aria-hidden="true"></i>
+				</div>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-lg-4 col-md-6 mt-2">
+		<div class="card bg-gradient-success">
+			<div class="card-body p-3">
+			<div class="row">
+				<div class="col-8">
+				<div class="numbers">
+					<p class="text-white text-sm mb-0 opacity-7">At Destination</p>
+					<h5 class="text-white font-weight-bolder mb-0">
+					99 %
+					</h5>
+				</div>
+				</div>
+				<div class="col-4 text-end">
+				<div class="icon icon-shape bg-white shadow text-center border-radius-md">
+					<i class="fas fa-store-alt text-dark text-lg opacity-10" aria-hidden="true"></i>
+
+					
+				</div>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-lg-4 col-md-6 mt-2">
+		<div class="card bg-gradient-dark">
+			<div class="card-body p-3">
+			<div class="row">
+				<div class="col-8">
+				<div class="numbers">
+					<p class="text-white text-sm mb-0 opacity-10">Delivered</p>
+					<h5 class="text-white font-weight-bolder mb-0">
+					99 %
+					</h5>
+				</div>
+				</div>
+				<div class="col-4 text-end">
+				<div class="icon icon-shape bg-white shadow text-center border-radius-md">
+					<i class="fas fa-check-circle text-dark text-lg opacity-10" aria-hidden="true"></i>
+
+				</div>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+</div> {% endcomment %}
+
+
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="file" name="myfile">
+    <button type="submit">Upload</button>
+  </form>
+
+
+{% endblock %}
+{% block javascript %}
+{% endblock %}

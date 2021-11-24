@@ -1,0 +1,8 @@
+-r ./base.txt
+
+# Debugging
+ipdb
+django-debug-toolbar
+
+# Tools
+django-extensions

@@ -1,0 +1,21 @@
+# Django
+Django==3.2.6
+
+#History
+django-simple-history
+
+# Environment
+django-environ==0.4.5
+
+# Passwords security
+argon2-cffi
+
+# Static files
+whitenoise
+
+# Celery
+redis
+django-redis
+celery
+flower
+
